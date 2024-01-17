@@ -1,8 +1,8 @@
-# React + Vite
+# A Simple Landing Page 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An implementation for [Landing Page Template](https://www.figma.com/community/file/1328257564171258838)
+using HTML, CSS and a touch of React.
 
-Currently, two official plugins are available:
+<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="https://raw.githubusercontent.com/jamalnay/landing-template/main/22a2f886-2b74-456f-b751-d27bba8fd98c-cover.png" width="800">
