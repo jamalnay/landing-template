@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="public/logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="src/assets/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/index.css" />
+
     <title>Vsact</title>
   </head>
   <body>
     <header>
       <nav id="top-nav">
         <div id="top-nav-navigation-section">
-          <img id="top-nav-logo" src="public/logo.svg" />
+          <img id="top-nav-logo" src="src/assets/logo.svg" />
           <div id="top-nav-menu">
             <a class="top-nav-link" href="#">Features</a>
             <a class="top-nav-link" href="#">Pricing</a>
@@ -22,7 +23,7 @@
         <div id="top-nav-user-section">
           <a href="#">Open an Account</a>
           <div id="top-nav-user-signing">
-            <img src="public/user_icon.svg" />
+            <img src="src/assets/user_icon.svg" />
             <a href="#"> Sign In</a>
           </div>
         </div>
@@ -43,16 +44,23 @@
         <button class="button-primary">Try for free</button>
         <button id="pricing-button" href="#">
           <p>View Pricing</p>
-          <img src="public/arrow.svg" />
+          <img src="src/assets/arrow.svg" />
         </button>
       </div>
       <div id="hero-section-image">
-        <img src="public/hero_image.png" />
+        <img src="src/assets/hero_image.png" />
       </div>
       <div id="hero-section-gradient">
-        <img src="public/hero_gradient.png" />
+        <img src="src/assets/hero_gradient.png" />
       </div>
-      <div id="hero-section-logos"></div>
+      <div id="hero-section-companies">
+        <div>
+          <p>Trusted by these companies</p>
+        </div>
+        <div id="companies-list">
+          <script type="module" src="/src/main.jsx"></script>
+        </div>
+      </div>
     </div>
   </body>
 </html>

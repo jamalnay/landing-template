@@ -14,13 +14,11 @@ body {
   padding: 0px;
 }
 h1 {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: #172026;
   font-size: 64px;
   line-height: 100%;
 }
 p {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: #36485c;
   font-size: 18px;
   line-height: 128%;
@@ -88,18 +86,17 @@ a:hover {
   border-radius: 4px;
   background-color: #4328eb;
   color: white;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   margin-right: 40px;
 }
 .button-primary:hover {
   cursor: pointer;
-  background-color: #5840f5;
+  filter: saturate(2);
   transform: translateY(-1px);
 }
 .button-primary:active {
-  background-color: #361be4;
+  filter: brightness(0.8);
   transform: translateY(0);
 }
 #hero-section-buttons {
@@ -111,17 +108,24 @@ a:hover {
 #pricing-button {
   display: flex;
   align-items: center;
-  border: 0;
-  background-color: transparent;
-}
-#pricing-button:hover {
+  border: #4328eb solid 1px;
+  border-radius: 4px;
   cursor: pointer;
-}
-#pricing-button a {
-  color: #4328eb;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
+  background-color: transparent;
+  padding: 11.1px 16px 11.1px 16px;
+}
+#pricing-button p {
+  color: #4328eb;
+}
+
+#pricing-button:hover {
+  transform: translateY(-1px);
+}
+#pricing-button:active {
+  transform: translateY(0px);
+  filter: brightness(0.8);
 }
 #pricing-button img {
   margin-left: 12px;
@@ -139,45 +143,18 @@ a:hover {
   max-width: 100%;
   z-index: -1;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #top-nav {
-    display: none;
-  }
-  h1 {
-    color: hsl(204, 25%, 12%);
-    font-size: 24px;
-  }
-  #hero-section-details {
-    display: none;
-  }
+#hero-section-companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: -128px 100px 200px 100px;
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  #top-nav {
-    display: none;
-  }
-  h1 {
-    color: #172026;
-    font-size: 32px;
-  }
-  p {
-    font-size: 16px;
-  }
+#hero-section-companies p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  #top-nav {
-    display: none;
-  }
-  h1 {
-    color: #172026;
-    font-size: 48px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+.logo-img {
+  margin-right: 56px;
 }
