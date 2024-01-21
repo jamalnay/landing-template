@@ -10,26 +10,32 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  inset: 0px;
-  padding: 0px;
+}
+:root {
+  --primary-text-color: #36485c;
+  --call-to-action-color: #4328eb;
+  --secondary-text-color: #172026;
+  --sales-card-color: #0085ff;
+  --support-card-color: #00a424;
+  --growth-card-color: #eb2891;
 }
 h1 {
-  color: #172026;
+  color: var(--secondary-text-color);
   font-size: 64px;
   line-height: 100%;
 }
 p {
-  color: #36485c;
-  font-size: 18px;
+  color: var(--primary-text-color);
+  font-size: 1.125rem;
   line-height: 128%;
 }
 a {
   font-weight: 500;
-  color: #36485c;
+  color: var(--primary-text-color);
   text-decoration: inherit;
 }
 a:hover {
-  color: #4328eb;
+  color: var(--call-to-action-color);
 }
 #top-nav {
   display: flex;
@@ -65,7 +71,7 @@ a:hover {
   margin-right: 54px;
 }
 #hero-section-text {
-  margin: 44px 280px 24px 280px;
+  margin: 44px 0px 24px 0px;
 }
 #hero-section-title {
   text-align: center;
@@ -84,7 +90,7 @@ a:hover {
   padding: 16px 32px 16px 32px;
   border: 0;
   border-radius: 4px;
-  background-color: #4328eb;
+  background-color: var(--call-to-action-color);
   color: white;
   font-size: 18px;
   font-weight: 400;
@@ -108,8 +114,7 @@ a:hover {
 #pricing-button {
   display: flex;
   align-items: center;
-  border: #4328eb solid 1px;
-  border-radius: 4px;
+  border: 0;
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
@@ -117,7 +122,7 @@ a:hover {
   padding: 11.1px 16px 11.1px 16px;
 }
 #pricing-button p {
-  color: #4328eb;
+  color: var(--call-to-action-color);
 }
 
 #pricing-button:hover {
@@ -157,4 +162,152 @@ a:hover {
 }
 .logo-img {
   margin-right: 56px;
+}
+#features-section {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  padding: 0 5%;
+}
+.feature-card {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.feature-card-content-rtl {
+  padding: 56px 0px 56px 56px;
+}
+.feature-card-content-ltr {
+  padding: 56px 56px 56px 0px;
+}
+.feature-card-departement {
+  color: var(--sales-card-color);
+}
+.feature-card h2 {
+  font-size: 42px;
+  color: var(--secondary-text-color);
+  margin-top: 16px;
+}
+.feature-card p {
+  font-size: 18px;
+}
+.feature-card-descirption {
+  color: var(--primary-text-color);
+  margin-top: 16px;
+}
+.features-card-focus-content-list {
+  color: var(--primary-text-color);
+  margin-top: 32px;
+}
+
+.features-card-focus-content-list li:nth-child(-n + 2) {
+  margin-bottom: 20px;
+}
+.features-card-focus-content-list li {
+  padding-left: 32px;
+  background-image: url("assets/check_icon.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.feature-learn-more-link {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-top: 56px;
+}
+.feature-learn-more-link p {
+  margin-right: 12px;
+  cursor: pointer;
+}
+.text-color-link {
+  color: var(--call-to-action-color);
+}
+.text-color-sales {
+  color: var(--sales-card-color);
+}
+.text-color-support {
+  color: var(--support-card-color);
+}
+.text-color-growth {
+  color: var(--growth-card-color);
+}
+.arrow-icon path {
+  stroke: var(--call-to-action-color);
+}
+.arrow-icon-sales path {
+  stroke: var(--sales-card-color);
+}
+.arrow-icon-support path {
+  stroke: var(--support-card-color);
+}
+.arrow-icon-growth path {
+  stroke: var(--growth-card-color);
+}
+.features-card-focus-content-stats {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 48px;
+}
+.features-card-focus-content-stats div {
+  margin-right: 24px;
+}
+.features-card-focus-content-stats h3 {
+  color: var(--secondary-text-color);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#testimonials-section {
+  background-color: #f4f8fa;
+  text-align: center;
+  padding-top: 96px;
+}
+#testimonials-section h1 {
+  margin-bottom: 16px;
+}
+#testimonials-section > p:first-of-type {
+  margin-bottom: 72px;
+}
+.testimonial-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.testimonial-header img:last-child {
+  margin-left: auto;
+}
+
+.testimonial-card {
+  flex: 1 1 26%;
+  padding: 24px;
+  margin: 24px;
+  background-color: white;
+  border: 0;
+  border-radius: 8px;
+}
+#testimonials-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px 40px;
+}
+
+.testimonial-card img:first-child {
+  margin-right: 16px;
+}
+.testimonial-attestant p {
+  text-align: left;
+  font-size: 16px;
+}
+.testimonial-attestant > p:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+.testimonial-text {
+  text-align: left;
 }
