@@ -12,8 +12,6 @@ export default function PlansList() {
           <li>Lorem ipsum dolor sit amet</li>
           <li>Consectetur adipiscing elit</li>
           <li>Sed do eiusmod tempor incididunt </li>
-          <li>Lorem ipsum dolor sit amet </li>
-          <li>Consectetur adipiscing elit </li>
         </ul>
       ),
       buttonText: "Start Trial",
@@ -28,6 +26,8 @@ export default function PlansList() {
           <li>Lorem ipsum dolor sit amet</li>
           <li>Consectetur adipiscing elit</li>
           <li>Sed do eiusmod tempor incididunt </li>
+          <li>Lorem ipsum dolor sit amet </li>
+          <li>Consectetur adipiscing elit </li>
         </ul>
       ),
       buttonText: "Get Started",

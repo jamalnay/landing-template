@@ -6,6 +6,7 @@ import FeaturesList from "./components/FeaturesList";
 import TestimonialsList from "./components/TestimonialsList";
 import Accordion from "./components/Accordion";
 import PlansList from "./components/PlansList";
+import BottomNavigation from "./components/BottomNavigation";
 
 ReactDOM.createRoot(document.getElementById("companies-list")).render(
   <React.StrictMode>
@@ -30,5 +31,10 @@ ReactDOM.createRoot(document.getElementById("faq-accordion")).render(
 ReactDOM.createRoot(document.getElementById("plans-cards")).render(
   <React.StrictMode>
     <PlansList />
+  </React.StrictMode>
+);
+ReactDOM.createRoot(document.getElementById("bottom-nav-menus")).render(
+  <React.StrictMode>
+    <BottomNavigation />
   </React.StrictMode>
 );

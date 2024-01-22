@@ -380,7 +380,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  margin: 64px 80px 120px 80px;
+  margin: 64px 80px 60px 80px;
 }
 .plan-card {
   height: 490px;
@@ -543,4 +543,52 @@ a:hover {
 }
 #cta-pricing-button img {
   margin-left: 12px;
+}
+
+#bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 60px 80px;
+  background-color: #f4f8fa;
+}
+
+#bottom-nav-logo {
+  display: flex;
+  align-items: center;
+}
+#bottom-nav-logo p {
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+#bottom-nav-menus {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+.bottom-menu {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-menu p {
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+
+.bottom-menu a {
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+#copyrights-social {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px 56px 80px;
+  background-color: #f4f8fa;
+}
+#social-links a {
+  margin-left: 56px;
+}
+#social-links path:hover {
+  fill: var(--call-to-action-color);
 }
