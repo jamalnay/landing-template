@@ -3,7 +3,7 @@ export default function FeaturesList() {
   const cards = [
     {
       direction: "ltr",
-      image: "src/assets/sales_monitoring.png",
+      image: "/sales_monitoring.png",
       departement: "Sales Monitoring",
       title: "Simplify your sales monitoring",
       description:
@@ -18,7 +18,7 @@ export default function FeaturesList() {
     },
     {
       direction: "rtl",
-      image: "src/assets/customer_support.png",
+      image: "/customer_support.png",
       departement: "Customer Support",
       title: "Get in touch with your customers",
       description:
@@ -33,7 +33,7 @@ export default function FeaturesList() {
     },
     {
       direction: "ltr",
-      image: "src/assets/growth_monitoring.png",
+      image: "/growth_monitoring.png",
       departement: "Growth Monitoring",
       title: "Monitor your site’s new subscribers ",
       description:

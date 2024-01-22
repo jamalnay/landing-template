@@ -23,11 +23,7 @@ export default function Accordion() {
         <div>
           <p>{item.question}</p>
           <img
-            src={
-              isExpanded
-                ? "src/assets/accordion_hide.png"
-                : "src/assets/accordion_show.png"
-            }
+            src={isExpanded ? "/accordion_hide.png" : "/accordion_show.png"}
           />
         </div>
         <div

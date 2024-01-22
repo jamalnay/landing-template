@@ -212,7 +212,7 @@ a:hover {
 }
 .features-card-focus-content-list li {
   padding-left: 32px;
-  background-image: url("assets/check_icon.svg");
+  background-image: url("/check_icon.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -462,14 +462,14 @@ a:hover {
 }
 
 .plans-card-inclusion-list li {
-  list-style-image: url("assets/check_icon_black_16x16.png");
+  list-style-image: url("/check_icon_black_16x16.png");
   list-style-position: inside;
   vertical-align: text-top;
   margin-bottom: 16px;
 }
 .highlighted-plans-card-inclusion-list li {
   padding-left: 32px;
-  background-image: url("assets/check_icon_white_16x16.png");
+  background-image: url("/check_icon_white_16x16.png");
   background-repeat: no-repeat;
   vertical-align: bottom;
   margin-bottom: 8px;
@@ -483,7 +483,7 @@ a:hover {
   border: 0;
   border-radius: 12px;
   padding: 88px 0;
-  background-image: url("assets/bottom_gradient.png");
+  background-image: url("/bottom_gradient.png");
   background-repeat: no-repeat;
 }
 #cta-section h1 {
