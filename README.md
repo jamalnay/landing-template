@@ -1,7 +1,8 @@
 # A Simple Landing Page 
 
-An implementation for [Landing Page Template](https://www.figma.com/community/file/1328257564171258838)
-using HTML, CSS and a touch of React.
+An implementation for a [Landing Page Template](https://www.figma.com/community/file/1328257564171258838) 
+using HTML, CSS and basic React. <br><br>
+[Live deployement on netlify](https://exquisite-frangollo-77df1d.netlify.app/)
 
 <br>
 
