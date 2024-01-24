@@ -1,6 +1,6 @@
 # A Simple Landing Page 
 
-This is an implementation for the design of [Landing Page Template](https://www.figma.com/community/file/1328257564171258838). This is created for learning purposes using HTML, CSS, React & Vanilla JS. This landing page contains multiple section. Live deployment for this implementation can be found on [Live](https://exquisite-frangollo-77df1d.netlify.app/)
+This is an implementation for the design of [Landing Page Template](https://www.figma.com/community/file/1328257564171258838). This is created for learning purposes using HTML, CSS, React & Vanilla JS. This landing page contains multiple sections, each with it's own proprities as explained above. The Live deployment for this implementation can be found on [Live](https://exquisite-frangollo-77df1d.netlify.app/)
 
 
 ### Top navigation menu and a hero section 
