@@ -1,5 +1,4 @@
 @import "/node_modules/reset-css/reset.css";
-
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -10,6 +9,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 :root {
   --primary-text-color: #36485c;
@@ -36,10 +36,12 @@ p {
 }
 a {
   font-weight: 500;
+  font-size: 16px;
   color: var(--primary-text-color);
   text-decoration: inherit;
 }
 a:hover {
+  font-size: 16px;
   color: var(--call-to-action-color);
 }
 #top-nav {
@@ -64,14 +66,23 @@ a:hover {
   display: flex;
   align-items: center;
 }
-#top-nav-user-signing {
+#top-nav-user-signing a {
   margin-left: 54px;
   display: flex;
   align-items: center;
+  gap: 12px;
 }
-#top-nav-user-signing a {
-  margin-left: 12px;
+
+#top-nav-user-signing p {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primary-text-color);
+  text-decoration: inherit;
 }
+#top-nav-user-signing p:hover {
+  color: var(--call-to-action-color);
+}
+
 .top-nav-link {
   margin-right: 54px;
 }
@@ -156,23 +167,25 @@ a:hover {
 #hero-section-companies {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: relative;
-  margin: -128px 100px 200px 100px;
+  margin: -128px 0px 60px 0px;
 }
 #hero-section-companies p {
+  width: 100%;
   color: white;
   font-size: 18px;
   font-weight: 400;
+  margin-left: 20%;
 }
 .logo-img {
-  margin-right: 56px;
+  margin-left: 56px;
 }
 #features-section {
   display: block;
   align-items: center;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 120px;
   padding: 0 5%;
 }
 .feature-card {
@@ -266,11 +279,31 @@ a:hover {
 }
 
 #testimonials-section {
+  height: 648px;
   background-color: #f4f8fa;
   text-align: center;
   padding-top: 96px;
   padding-bottom: 80px;
 }
+
+#testimonials-cards {
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 519px);
+  padding: 0px 40px;
+}
+
+.testimonial-card {
+  position: relative;
+  padding: 24px;
+  margin: 24px;
+  background-color: white;
+  border: 0;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
 #testimonials-section h2 {
   margin-bottom: 16px;
 }
@@ -285,21 +318,6 @@ a:hover {
 }
 .testimonial-header img:last-child {
   margin-left: auto;
-}
-
-.testimonial-card {
-  flex: 1 1 26%;
-  padding: 24px;
-  margin: 24px;
-  background-color: white;
-  border: 0;
-  border-radius: 8px;
-}
-#testimonials-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 0px 40px;
 }
 
 .testimonial-card img:first-child {

@@ -1,42 +1,74 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #top-nav {
-    display: none;
+@media only screen and (max-width: 1120px) {
+  #hero-section-companies {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: -128px 0px 0px 0px;
   }
-  h1 {
-    color: hsl(204, 25%, 12%);
-    font-size: 24px;
+  #hero-section-companies p {
+    margin: 12px 0;
   }
-  #hero-section-details {
-    display: none;
+  body #features-section {
+    margin-top: 0px;
   }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  #top-nav {
-    display: none;
-  }
-  h1 {
-    color: #172026;
-    font-size: 32px;
-  }
-  p {
-    font-size: 16px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  #top-nav {
-    display: none;
-  }
-  h1 {
-    color: #172026;
+  body #cta-section h1 {
     font-size: 48px;
   }
 }
+@media only screen and (max-width: 1020px) {
+  #top-nav-user-section p {
+    display: none;
+  }
+  #top-nav-user-section > a:first-child {
+    display: none;
+  }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+  .feature-card h2 {
+    font-size: 32px;
+  }
+  .feature-card-descirption {
+    display: none;
+  }
+  .features-card-focus-content-list li {
+    padding-left: 0px;
+  }
+  #features-section > .feature-card > .feature-card-content-ltr {
+    padding-right: 12px;
+  }
+  #features-section > .feature-card > .feature-card-content-rtl {
+    padding-left: 12px;
+  }
+  #faq-section h2 {
+    font-size: 32px;
+  }
+  .plans-card-inclusion-list {
+    font-size: 14px;
+  }
+  .highlighted-plans-card-inclusion-list {
+    font-size: 14px;
+  }
+  body .plan-card div p {
+    font-size: 14px;
+  }
+  body .plan-card {
+    height: 380px;
+  }
+  body .highlighted-plan-card {
+    height: 380px;
+  }
+  body .plan-name {
+    margin-bottom: 16px;
+  }
+  body .plan-price {
+    margin-bottom: 16px;
+    font-size: 28px;
+    color: var(--secondary-text-color);
+  }
+  body .plan-description {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  body #cta-section h1 {
+    font-size: 40px;
+  }
 }
