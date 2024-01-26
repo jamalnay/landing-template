@@ -292,6 +292,7 @@ a:hover {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(6, 519px);
   padding: 0px 40px;
+  cursor: grab;
 }
 
 .testimonial-card {
