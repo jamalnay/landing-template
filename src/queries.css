@@ -286,6 +286,7 @@
     flex-direction: column;
     gap: 2.4rem;
     margin: 3rem 2rem 3rem 2rem;
+    padding-inline: 2.4rem;
   }
   body .plan-card {
     width: 39rem;
@@ -308,8 +309,8 @@
   body .plan-card > div p:nth-child(2) {
     margin-bottom: 6rem;
   }
-  .highlighted-plan-card > p,
-  .highlighted-plan-card > ul > li {
+  body .highlighted-plan-card > p,
+  body .highlighted-plan-card > ul > li {
     color: #f4f8fa;
   }
 
