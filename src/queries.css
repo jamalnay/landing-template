@@ -297,6 +297,8 @@
     border: 0;
     border-radius: 0.8rem;
     box-sizing: border-box;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
   }
   body .highlighted-plan-card {
     width: 39rem;
@@ -306,6 +308,8 @@
     border: 0;
     border-radius: 0.8rem;
     box-sizing: border-box;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
   }
   body .plan-card > div p:nth-child(2) {
     margin-bottom: 6rem;
