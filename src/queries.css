@@ -286,7 +286,8 @@
     flex-direction: column;
     gap: 2.4rem;
     margin: 3rem 2rem 3rem 2rem;
-    padding-inline: 2.4rem;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
   }
   body .plan-card {
     width: 39rem;
