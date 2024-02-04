@@ -1,4 +1,4 @@
-const container = document.getElementById("testimonials-section");
+const container = document.getElementById("testimonials-container");
 const cards = document.getElementById("testimonials-cards");
 
 /* keep track of user's mouse down and up */
@@ -9,6 +9,12 @@ let cursorXSpace;
 cards.addEventListener("mousedown", (e) => {
   isPressedDown = true;
   cursorXSpace = e.clientX - cards.offsetLeft;
+  cards.style.cursor = "grabbing";
+});
+cards.addEventListener("touchstart", (e) => {
+  isPressedDown = true;
+  const touches = e.changedTouches[0];
+  cursorXSpace = touches.clientX - cards.offsetLeft;
   cards.style.cursor = "grabbing";
 });
 
@@ -25,6 +31,15 @@ container.addEventListener("mousemove", (e) => {
   if (!isPressedDown) return;
   e.preventDefault();
   cards.style.left = `${e.clientX - cursorXSpace}px`;
+  boundCards();
+});
+container.addEventListener("touchmove", (e) => {
+  const touches = e.changedTouches[0];
+  if (!isPressedDown) return;
+  if (e.cancelable) {
+    e.preventDefault();
+  }
+  cards.style.left = `${touches.clientX - cursorXSpace}px`;
   boundCards();
 });
 

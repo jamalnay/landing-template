@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
     <link rel="stylesheet" href="src/index.css" />
     <link rel="stylesheet" href="src/queries.css" />
-
     <title>Vsact</title>
-    <script type="module" src="src/main.jsx"></script>
     
   </head>
   <body>
@@ -29,6 +27,12 @@
             <a href="#"><img src="/user_icon.svg"/><p>Sign In</p></a>
           </div>
         </div>
+        <div id="mobile-navigation-section">
+          <button class="mobile-navigation-button">
+            <img src="/hamburger_menu.svg" class="open-mobile-menu"/>
+            <img src="/close_button.svg" class="close-mobile-menu"/>
+          </button>
+        </div>
       </nav>
     </header>
     <div id="hero-section">
@@ -39,14 +43,14 @@
         </h1>
         <p id="hero-section-details">
           Get a bird's eye view with our customizable dashboard. Stay on top of
-          things! Revamp your work <br />
-          process with our game-changing feature. Boost productivity and
+          things! Revamp your work. <br />
+          Process with our game-changing feature. Boost productivity and
           efficiency!
         </p>
       </div>
       <div id="hero-section-buttons">
         <button class="button-primary">Try for free</button>
-        <button id="pricing-button" href="#">
+        <button id="pricing-button">
           <p>View Pricing</p>
           <img src="/arrow_icon.svg" />
         </button>
@@ -58,7 +62,7 @@
         <img src="/hero_gradient.png" />
       </div>
       <div id="hero-section-companies">
-        <div>
+        <div class="trusted-by-text">
           <p>Trusted by these companies</p>
         </div>
         <div id="companies-list"></div>
@@ -73,9 +77,11 @@
         sed quia consequuntur ma. Ut enim ad minim veniam, quis nostrud
         exercitation.
       </p>
-      <div id="testimonials-cards">
-        
+      <div id="testimonials-container">
+        <div id="testimonials-cards">
+        </div>
       </div>
+      
     </div>
     <div id="faq-section">
       <div id="faq-description">
@@ -174,6 +180,8 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="src/main.jsx"></script>
     <script type="module" src="src/slider.js"></script>
+    <script type="module" src="src/mobile-nav.js"></script>
   </body>
 </html>

@@ -3,19 +3,62 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: -128px 0px 0px 0px;
+    margin: -12.8rem 0 0 0;
   }
   #hero-section-companies p {
-    margin: 12px 0;
+    margin: 1.2rem 0;
   }
   body #features-section {
-    margin-top: 0px;
+    margin-top: 0;
   }
   body #cta-section h1 {
-    font-size: 48px;
+    font-size: 4.8rem;
   }
 }
 @media only screen and (max-width: 1020px) {
+  body #hero-section-details {
+    margin: 0 3.2rem 4rem 3.2rem;
+  }
+  body #testimonials-cards {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 42rem);
+    padding: 0 2rem;
+    cursor: grab;
+  }
+  body .testimonial-card {
+    position: relative;
+    padding: 1.6rem;
+    margin: 1.6rem;
+    background-color: white;
+    border: 0;
+    border-radius: 0.8rem;
+    pointer-events: none;
+  }
+  body .testimonial-card p {
+    font-size: 1.6rem;
+  }
+  body #faq-section {
+    padding: 12rem 3.2rem 6rem 3.2rem;
+  }
+  body .accordion-item {
+    padding: 1.6rem;
+  }
+  body .accordion-item > div:first-child {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1.6rem;
+    cursor: pointer;
+  }
+  body .accordion-item > div:first-child p {
+    font-weight: 400;
+    color: var(--secondary-text-color);
+  }
+  body .accordion-item > div p {
+    font-size: 1.6rem;
+  }
   #top-nav-user-section p {
     display: none;
   }
@@ -23,52 +66,394 @@
     display: none;
   }
 
-  .feature-card h2 {
-    font-size: 32px;
+  body .feature-card h2 {
+    font-size: 3.2rem;
   }
-  .feature-card-descirption {
+  body .feature-card-descirption {
     display: none;
   }
-  .features-card-focus-content-list li {
-    padding-left: 0px;
+  body .feature-card-content-rtl {
+    padding: 5.6rem 0 5.6rem 1.6rem;
   }
-  #features-section > .feature-card > .feature-card-content-ltr {
-    padding-right: 12px;
+  body .feature-card-content-ltr {
+    padding: 5.6rem 1.6rem 5.6rem 0;
   }
-  #features-section > .feature-card > .feature-card-content-rtl {
-    padding-left: 12px;
+  body .features-card-focus-content-list li {
+    padding-left: 0;
+    background-image: none;
   }
-  #faq-section h2 {
-    font-size: 32px;
+
+  body #faq-section h2 {
+    font-size: 3.2rem;
   }
-  .plans-card-inclusion-list {
-    font-size: 14px;
+  body #plans-cards {
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
   }
-  .highlighted-plans-card-inclusion-list {
-    font-size: 14px;
+
+  body .plans-card-inclusion-list {
+    font-size: 1.4rem;
+  }
+  body .highlighted-plans-card-inclusion-list {
+    font-size: 1.4rem;
   }
   body .plan-card div p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   body .plan-card {
-    height: 380px;
+    height: 38rem;
   }
   body .highlighted-plan-card {
-    height: 380px;
+    height: 38rem;
   }
   body .plan-name {
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
   }
   body .plan-price {
-    margin-bottom: 16px;
-    font-size: 28px;
+    margin-bottom: 1.6rem;
+    font-size: 2.8rem;
     color: var(--secondary-text-color);
   }
   body .plan-description {
-    margin-bottom: 16px;
-    font-size: 16px;
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
   }
   body #cta-section h1 {
-    font-size: 40px;
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body #top-nav {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+  body #top-nav-menu {
+    margin-left: 3.2rem;
+  }
+  body .top-nav-link {
+    margin-right: 2rem;
+  }
+  #hero-section-title {
+    font-size: 4.8rem;
+  }
+  body #hero-section-details {
+    font-size: 1.6rem;
+  }
+  body #testimonials-cards {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 32rem);
+    padding: 0 1.2rem;
+    cursor: grab;
+  }
+  body .testimonial-card {
+    position: relative;
+    padding: 1.2rem;
+    margin: 1.2rem;
+    background-color: white;
+    border: 0;
+    border-radius: 0.8rem;
+    pointer-events: none;
+  }
+  body .testimonial-attestant p {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  body .testimonial-card p {
+    font-size: 1.4rem;
+  }
+  body .plans-card-inclusion-list li {
+    list-style-image: none;
+    margin-bottom: 0;
+  }
+  body .highlighted-plans-card-inclusion-list li {
+    list-style-image: none;
+    margin-bottom: 0;
+  }
+  .features-card-focus-content-list li:nth-child(-n + 2) {
+    margin-bottom: 0.8rem;
+  }
+  body .plan-name {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size: 2rem;
+    color: var(--call-to-action-color);
+  }
+  body .plan-price {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+  }
+  body .plan-description {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+  }
+  #bottom-nav-menus {
+    width: 100%;
+  }
+
+  body .plan-card {
+    padding: 1.6rem;
+  }
+  body .highlighted-plan-card {
+    padding: 1.6rem;
+  }
+  body #plans-section {
+    padding-bottom: 2rem;
+  }
+}
+
+/**************
+* mbile style *
+***************/
+@media only screen and (max-width: 700px) {
+  #hero-section-title {
+    font-size: 3.2rem;
+  }
+  #hero-section-details {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  body #hero-section-companies p {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+  body #hero-section-companies {
+    margin: -7rem 0 6rem 0;
+  }
+  body #hero-section-companies p {
+    margin: 0;
+  }
+  body .logo-img {
+    width: 15%;
+  }
+  #companies-list {
+    margin: 0 10%;
+  }
+  .feature-card {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8rem;
+    font-size: 1.6rem;
+  }
+  .feature-card:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  body .feature-card > img {
+    width: 100%;
+  }
+
+  body .features-card-focus-content-list li {
+    padding-left: 3.2rem;
+    background-image: url("/check_icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  body .feature-learn-more-link {
+    justify-content: end;
+  }
+  body .feature-card-content-rtl {
+    padding-top: 0;
+  }
+  body .feature-card-content-ltr {
+    padding-top: 0;
+  }
+
+  body #faq-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 2rem 3rem 2rem;
+  }
+  body #faq-description {
+    padding: 3.2rem 2rem 3.2rem 2rem;
+    text-align: center;
+  }
+  body #plans-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin: 3rem 2rem 3rem 2rem;
+  }
+  body .plan-card {
+    width: 39rem;
+    background-color: white;
+    font-size: 1.6rem;
+    padding: 2.4rem;
+    border: 0;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+  }
+  body .highlighted-plan-card {
+    width: 39rem;
+    font-size: 1.6rem;
+    background-color: var(--call-to-action-color);
+    padding: 2.4rem;
+    border: 0;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+  }
+  body .plan-card > div p:nth-child(2) {
+    margin-bottom: 6rem;
+  }
+  .highlighted-plan-card > p,
+  .highlighted-plan-card > ul > li {
+    color: #f4f8fa;
+  }
+
+  body .plan-name {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--call-to-action-color);
+  }
+  body .plan-price {
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+    color: var(--secondary-text-color);
+  }
+  body .plan-description {
+    margin-bottom: 2rem;
+  }
+  body #plans-section .plan-card button {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    margin-top: 3rem;
+    border: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  body #plans-section {
+    padding: 3rem 0;
+    background-color: #f4f8fa;
+  }
+  body #plans-section > h2 {
+    margin-bottom: 1.6rem;
+    text-align: center;
+  }
+  body #plans-section > p {
+    text-align: center;
+  }
+
+  body .plans-card-inclusion-list li {
+    list-style-image: url("/check_icon_black_16x16.png");
+    list-style-position: inside;
+    vertical-align: text-top;
+    margin-bottom: 0.8rem;
+  }
+  body .highlighted-plans-card-inclusion-list li {
+    list-style-image: url("/check_icon_white_16x16.png");
+    list-style-position: inside;
+    vertical-align: text-top;
+    margin-bottom: 0.8rem;
+  }
+  body .highlighted-plans-card-inclusion-list li:nth-child(4) {
+    margin-bottom: 3rem;
+  }
+  body .plans-card-inclusion-list li:nth-child(3) {
+    margin-bottom: 6rem;
+  }
+
+  body #cta-section {
+    text-align: center;
+    margin: 1.2rem 2rem 6rem 2rem;
+    border: 0;
+    border-radius: 1.2rem;
+    padding: 4rem 1rem;
+    background-image: url("/bottom_gradient.png");
+    background-repeat: no-repeat;
+  }
+  body .cta-button-primary {
+    margin-right: 2rem;
+  }
+
+  body #bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 6rem 2rem;
+    background-color: #f4f8fa;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  body #bottom-nav-menus {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  body .bottom-menu a {
+    margin-bottom: 1.6rem;
+    font-weight: 600;
+  }
+
+  body #copyrights-social {
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+    padding-inline: 2rem;
+  }
+  body #social-links a {
+    margin-left: 0rem;
+    margin-right: 5.6rem;
+  }
+
+  .no-over-flow {
+    overflow: hidden;
+  }
+
+  .menu-open #top-nav-menu {
+    margin-left: 0;
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+  body #mobile-navigation-section {
+    display: block;
+    z-index: 3;
+  }
+
+  .menu-open .open-mobile-menu {
+    display: none;
+  }
+  body #top-nav-menu {
+    position: absolute;
+    background-color: #36485c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  .top-nav-link {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: white;
+  }
+  body #top-nav-navigation-section {
+    flex-grow: 1;
+  }
+  .menu-open .close-mobile-menu {
+    display: block;
   }
 }
