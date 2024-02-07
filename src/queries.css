@@ -286,28 +286,24 @@
     flex-direction: column;
     gap: 2.4rem;
     margin: 3rem 2rem 3rem 2rem;
-    padding-right: 2.4rem;
-    padding-left: 2.4rem;
   }
   body .plan-card {
-    width: 39rem;
+    width: 100%;
     background-color: white;
     font-size: 1.6rem;
     padding: 2.4rem;
     border: 0;
     border-radius: 0.8rem;
-    box-sizing: border-box;
     margin-left: 2.4rem;
     margin-right: 2.4rem;
   }
   body .highlighted-plan-card {
-    width: 39rem;
+    width: 100%;
     font-size: 1.6rem;
     background-color: var(--call-to-action-color);
     padding: 2.4rem;
     border: 0;
     border-radius: 0.8rem;
-    box-sizing: border-box;
     margin-left: 2.4rem;
     margin-right: 2.4rem;
   }
@@ -381,8 +377,15 @@
     background-image: url("/bottom_gradient.png");
     background-repeat: no-repeat;
   }
+  body #cta-section-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.4rem;
+    justify-content: center;
+  }
   body .cta-button-primary {
-    margin-right: 2rem;
+    margin-right: 0;
   }
 
   body #bottom-nav {
