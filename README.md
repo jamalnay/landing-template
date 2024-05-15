@@ -1,7 +1,11 @@
+
+
 # A Simple Landing Page 
 
-This is an implementation for the design of [Landing Page Template](https://www.figma.com/community/file/1328257564171258838). This is created for learning purposes using HTML, CSS, React & Vanilla JS. This landing page contains multiple sections, each with it's own proprities as explained above. The Live deployment for this implementation can be found on [Live](https://exquisite-frangollo-77df1d.netlify.app/)
-
+This is an implementation for the design of [Landing Page Template](https://www.figma.com/community/file/1328257564171258838). This is created for learning purposes using HTML, CSS, React & Vanilla JS. This landing page contains multiple sections, each with it's own proprities as explained above. The Live deployment for this implementation can be found on [Live](https://exquisite-frangollo-77df1d.netlify.app/)    
+<br><br>
+<img src="https://raw.githubusercontent.com/jamalnay/landing-template/main/MacBook%20Pro%20and%20iPhone%2015%20Pro%20Mockup.png" width="800">
+<br><br>
 
 ### Top navigation menu and a hero section 
 These tow section were created with HTML & CSS.
@@ -19,5 +23,5 @@ These tow sections are also created dynamically using React's components renderi
 #### Disclaimer
 The design copyrights goes to it's own owner, this implementation of the design is created for learning purposes only.
 
-<br><br>
-<img src="https://raw.githubusercontent.com/jamalnay/landing-template/main/22a2f886-2b74-456f-b751-d27bba8fd98c-cover.png" width="800">
+
+
